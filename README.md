@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+📘 README — Redux Pokédex (Pokedux)
+🚀 Redux Pokédex (Pokedux)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicación creada con React + Redux Toolkit que consume la API pública de Pokémon para mostrar una Pokédex interactiva, dinámica y totalmente responsive.
 
-## Available Scripts
+🎯 Descripción del proyecto
 
-In the project directory, you can run:
+Este proyecto es una Pokedux, una Pokédex integrada con Redux Toolkit.
+La aplicación consume la información desde una API y permite:
 
-### `npm start`
+🔍 Buscar Pokémon por nombre desde el buscador en tiempo real.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🖼 Ver cada Pokémon con su imagen, nombre y habilidades.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+⭐ Marcar y desmarcar como favorito haciendo click en la card.
 
-### `npm test`
+🔄 Manejar todo el estado Global con Redux Toolkit (Pokémons, UI, favoritos, búsqueda, etc).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📱 Diseño responsive, adaptable a diferentes resoluciones.
 
-### `npm run build`
+Es un proyecto ideal para entender cómo manejar estado global moderno usando Redux Toolkit + Redux Thunk.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🛠 Tecnologías utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Redux Toolkit
 
-### `npm run eject`
+React-Redux
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Redux Thunk
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ant Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Fetch API
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+CSS responsive
 
-## Learn More
+📡 Funcionalidades principales
+🔄 Obtener Pokémons desde una API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+La app consume datos de Pokémon desde la PokéAPI y los procesa para obtener:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Nombre
 
-### Code Splitting
+Imagen oficial
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Habilidades
 
-### Analyzing the Bundle Size
+Estado de favorito
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🔍 Búsqueda en tiempo real
 
-### Making a Progressive Web App
+Puedes escribir el nombre de un Pokémon y la lista se filtra automáticamente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+⭐ Favoritos con Redux Toolkit
 
-### Advanced Configuration
+Cada card tiene una estrella ⭐ para marcar como favorito.
+Esto se guarda en el estado global de Redux, evitando re-renders innecesarios.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+📱 Totalmente Responsive
 
-### Deployment
+La grilla se acomoda a diferentes resoluciones:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Desktop
 
-### `npm run build` fails to minify
+Tablet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Móvil
+
+📂 Estructura principal del proyecto
+src/
+├── components/
+│   ├── Searcher.jsx
+│   ├── PokemonList.jsx
+│   └── PokemonCard.jsx
+├── slices/
+│   ├── dataSlice.js
+│   └── uiSlice.js
+├── statics/
+│   └── logo.svg
+├── App.js
+└── index.js
+
+▶️ Cómo ejecutar el proyecto
+npm install
+npm start
+
+🧪 Build para producción
+npm run build
+
+🌐 Deploy
+
+El proyecto puede desplegarse fácilmente en plataformas como:
+
+Netlify
+
+Vercel
+
+GitHub Pages
+
+👨‍💻 Autor
+
+Proyecto creado por Daniel Vega, como parte del entrenamiento con Redux Toolkit y consumo de APIs.
