@@ -19,8 +19,10 @@ const filteredPokemons = pokemons.filter((pokemon) =>
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchPokemonsWithDetails());
-  }, []);
+  dispatch(fetchPokemonsWithDetails());
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
+
 
   return (
     <div className='App'>
